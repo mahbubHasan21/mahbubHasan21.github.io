@@ -1,0 +1,306 @@
+@media screen and (max-width: 1200px) {
+  .service-s-box {
+    margin-top: 35px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header {
+    background-position: center;
+  }
+  .logo img {
+    width: 70px;
+  }
+  header {
+    position: relative;
+  }
+  nav {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 0 0 0 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  ul#nav {
+    display: none;
+    list-style: none;
+    padding: 50px 40px;
+    background-color: #000000;
+  }
+  ul#nav li {
+    margin: 20px 0px;
+  }
+  ul#nav li a {
+    text-decoration: none;
+    padding: 10px 100px;
+    color: #dde7f0;
+    font-size: 18px;
+    font-family: "Edu NSW", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+  ul#nav li a:hover {
+    background-color: #9ecdf9;
+
+    border-radius: 5px;
+    color: #171c33;
+    transition: 0.3s;
+  }
+  #bars {
+    display: block;
+  }
+
+  /* About */
+  .about-content h1 {
+    margin-top: 50px;
+  }
+  .about-content p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 15px;
+  }
+  .a-contact {
+    margin-top: 50px;
+  }
+  /* education */
+  .edu-right-border {
+    border-right: none;
+    border-bottom: 2px solid #171c33;
+  }
+  /* Portfolio */
+  .portfolio-btn a {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px gray;
+  }
+
+  /* Services */
+  .service-box {
+    margin-top: 20px;
+  }
+  /* Contact */
+  .form {
+    padding: 40px 30px;
+  }
+  .form input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 110px !important;
+  }
+  .form textarea {
+    height: 100px !important;
+  }
+  /* footer */
+  footer ul {
+    display: block;
+  }
+  footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  footer ul li a {
+    content: "";
+  }
+  footer ul span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    border-radius: 0 0 0 150px;
+  }
+  .hero-content {
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+  }
+  .hero-content h2 {
+    font-size: 26px;
+  }
+  .hero-content h1 {
+    font-size: 36px;
+  }
+  .hero-content h3 {
+    font-size: 20px;
+  }
+  .hero-btn {
+    margin-top: 60px;
+  }
+  .hero-btn a.hire-btn {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .hero-btn a.resume-btn {
+    display: block;
+  }
+
+  .heading-title h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+  .heading-title h2::after {
+    margin: auto;
+    border-radius: 30px;
+  }
+  .heading-title p {
+    text-align: center;
+  }
+  /* About  */
+  .about {
+    margin-top: 100px;
+  }
+  .about-content h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .about-content p {
+    text-align: center;
+    /* margin-top: 50px; */
+  }
+  .avatar img {
+    display: none;
+  }
+  .avatar-md {
+    background: url("../img/avatar-md.png"), #f9f9f9;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  /* Portfolio */
+  .portfolio-cards {
+    margin-top: 40px;
+  }
+  .single-card {
+    margin: 0px 20px 35px 20px;
+  }
+  .single-bar p {
+    color: #003a70;
+  }
+  /* education */
+  .edu-title h2 {
+    text-align: left;
+  }
+  .edu-title h2::after {
+    margin: 0;
+    border-radius: 0 30px 30px 0;
+  }
+  .edu-cards {
+    margin-top: 30px;
+  }
+  .edu-single-card {
+    height: 200px;
+  }
+  /* Services */
+  .service-s-box {
+    text-align: center;
+    padding: 0 50px;
+  }
+  /* Contact */
+  .contact-form {
+    display: block;
+    border-radius: 0 0 10px 10px;
+  }
+  .contact-thumb {
+    width: 100%;
+    height: 300px;
+  }
+  .form {
+    width: 100%;
+  }
+
+  .form textarea {
+    height: 130px !important;
+  }
+  .contact-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .contact-btn input[type="submit"] {
+    border-radius: 5px;
+  }
+  /* footer */
+  footer ul {
+    text-align: center;
+  }
+  footer ul li i {
+    font-size: 22px;
+  }
+  footer ul li a.link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .header-top {
+    height: 7px;
+  }
+  .header {
+    height: 600px;
+    border-radius: 0 0 0 120px;
+    padding: 0px 20px;
+  }
+  .logo img {
+    width: 60px;
+  }
+  #bars {
+    font-size: 24px;
+  }
+  .hero-content h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .hero-content h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .hero-content h3 {
+    font-size: 16px;
+  }
+  .hero-btn {
+    margin-top: 0px;
+  }
+  .hero-btn a.hire-btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .hero-btn a.resume-btn {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  /* languages */
+  .languages {
+    background: none;
+    background-color: #f29836;
+  }
+  .single-bar p {
+    color: black;
+  }
+  /* education */
+  .edu-right-border {
+    border-bottom: 1px solid gray;
+  }
+  .edu-card-content {
+    padding: 20px 15px;
+  }
+  /* contact */
+  .contact {
+    padding: 50px 0px;
+  }
+  .contact-form {
+    margin-top: 20px;
+  }
+}

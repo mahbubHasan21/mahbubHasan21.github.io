@@ -1,0 +1,696 @@
+@font-face {
+  font-family: "Edu NSW";
+  src: url(../fonts/EduNSWACTFoundation-VariableFont_wght.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fonts/FiraSansExtraCondensed-Regular.ttf);
+  font-weight: 500;
+}
+* {
+  transition: 0.8s;
+}
+
+p,
+a {
+  font-family: "Edu NSW", Arial, Helvetica, sans-serif;
+}
+
+.header-top {
+  height: 10px;
+  background: linear-gradient(270deg, #9ecdf9 10.3%, #a5167d 91.31%);
+}
+.header {
+  background: url("../img/hero-bg.png"), #0c1023;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  border-radius: 0 0 0 200px;
+  position: relative;
+}
+.main-menu {
+  padding: 15px 0px;
+}
+.logo img {
+  width: 80px;
+}
+#bars {
+  color: #9ecdf9;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  display: none;
+  margin: 35px;
+  z-index: 10;
+}
+#x-bars {
+  color: #dde7f0;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  display: none;
+  margin: 35px;
+  z-index: 10;
+}
+
+ul#nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin-top: 18px;
+}
+ul#nav li:last-child i {
+  margin-left: 5px;
+  font-size: 24px;
+}
+ul#nav li:last-child a {
+  background-color: #dde7f0;
+  color: #171c33;
+  border-radius: 10px;
+}
+ul#nav li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #dde7f0;
+  font-size: 18px;
+  font-family: "Edu NSW", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+ul#nav li a:hover {
+  background-color: #9ecdf9;
+
+  border-radius: 5px;
+  text-decoration: none;
+  color: #171c33;
+  transition: 0.3s;
+  font-family: edu nsw;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -60%);
+}
+.hero-content h2 {
+  font-family: "Edu NSW", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 39px;
+  color: #f9f9f9;
+}
+.hero-content h1 {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: #faff00;
+}
+.hero-content h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #e2e2c4;
+  font-family: "Edu NSW", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.hero-btn {
+  margin-top: 100px;
+}
+.hero-btn a.hire-btn {
+  color: #85c1fa;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px 50px;
+  border: 2px solid #f9f9f9;
+  border-radius: 10px;
+}
+.hero-btn a.resume-btn {
+  color: #171c33;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px 50px;
+  border: 2px solid #f9f9f9;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+.hero-btn a.hire-btn:hover {
+  color: #171c33;
+  background-color: #f9f9f9;
+  transition: 0.6s;
+}
+.hero-btn a.resume-btn:hover {
+  color: #85c1fa;
+  background-color: transparent;
+  transition: 0.6s;
+}
+
+/* *
+*
+//ABOUT// 
+*
+**/
+.about {
+  margin-top: 140px;
+}
+.heading-title h2 {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  color: #171c33;
+  font-size: 38px;
+  font-weight: 700;
+}
+.heading-title p {
+  font-size: 20px;
+  color: #1d2959;
+}
+.heading-title h2::after {
+  display: block;
+  height: 6px;
+  width: 70px;
+  content: "";
+  background-color: #85c1fa;
+  border-radius: 0 5px 5px 0;
+}
+.about-content h1 {
+  margin-top: 70px;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.about-content p {
+  font-size: 22px;
+  line-height: 32px;
+  color: #1f253e;
+  margin-top: 24px;
+}
+.a-contact {
+  margin-top: 80px;
+  position: relative;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.a-contact::before {
+  content: "";
+  height: 100%;
+  width: 3px;
+  background-color: #85c1fa;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+.a-contact::after {
+  content: "";
+  height: 100%;
+  width: 3px;
+  background-color: #85c1fa;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+.a-contact i {
+  color: #1d2959;
+  font-size: 22px;
+  margin: 0px 5px;
+}
+.a-contact i:hover {
+  color: #85c1fa;
+  font-size: 21px;
+  transition: 0.9s;
+}
+.avatar {
+  text-align: right;
+}
+.avatar img {
+  width: 90%;
+}
+
+/* Language */
+.languages {
+  background: url("../img/skills-bg.jpg"), #f29836;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0px;
+  margin-top: 100px;
+}
+.languages-title h2::after {
+  background-color: #1d2959;
+}
+.progress-bars {
+  margin-top: 60px;
+}
+.single-bar {
+  margin-top: 15px;
+}
+.single-bar p {
+  margin: 0;
+  margin-bottom: -5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.single-bar p span {
+  float: right;
+}
+/* progress bar */
+
+.html,
+.css,
+.bootstrap,
+.js,
+.reactjs,
+.nodejs,
+.expressjs,
+.mongodb {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.html::after,
+.css::after,
+.bootstrap::after,
+.js::after,
+.nodejs::after,
+.expressjs::after,
+.reactjs::after,
+.mongodb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.html::after {
+  animation: html 5s forwards;
+}
+.css::after {
+  animation: css 5s forwards;
+}
+.bootstrap::after {
+  animation: bootstrap 5s forwards;
+}
+.js::after {
+  animation: js 5s forwards;
+}
+.nodejs::after {
+  animation: nodejs 5s forwards;
+}
+.expressjs::after {
+  animation: expressjs 5s forwards;
+}
+.reactjs::after {
+  animation: reactjs 5s forwards;
+}
+.mongodb::after {
+  animation: mongodb 5s forwards;
+}
+
+@keyframes html {
+  form {
+    width: 0;
+    background: #a28089;
+  }
+  to {
+    width: 90%;
+    background: #19234a;
+  }
+}
+@keyframes css {
+  form {
+    width: 0;
+    background: #a28089;
+  }
+  to {
+    width: 80%;
+    background: #19234a;
+  }
+}
+@keyframes bootstrap {
+  form {
+    width: 0;
+    background: #a28089;
+  }
+  to {
+    width: 70%;
+    background: #19234a;
+  }
+}
+@keyframes js {
+  form {
+    width: 0;
+    background: #a28089;
+  }
+  to {
+    width: 65%;
+    background: #19234a;
+  }
+}
+@keyframes reactjs {
+  form {
+    width: 0;
+    background: #a28089;
+  }
+  to {
+    width: 30%;
+    background: #19234a;
+  }
+}
+@keyframes nodejs {
+  form {
+    width: 0;
+    background: #a28089;
+  }
+  to {
+    width: 75%;
+    background: #19234a;
+  }
+}
+@keyframes expressjs {
+  form {
+    width: 0;
+    background: #a28089;
+  }
+  to {
+    width: 80%;
+    background: #19234a;
+  }
+}
+@keyframes mongodb {
+  form {
+    width: 0;
+    background: #a28089;
+  }
+  to {
+    width: 70%;
+    background: #19234a;
+  }
+}
+
+/* Education */
+.education {
+  background-color: #f9f9f9;
+  padding: 80px 0px;
+}
+.edu-cards {
+  margin-top: 60px;
+}
+.edu-single-card {
+  border-radius: 5px;
+  height: 245px;
+}
+
+.edu-single-card a {
+  text-decoration: none;
+}
+.edu-single-card:hover {
+  box-shadow: 0px 0px 20px #ddd1d1;
+  transition: 0.5s;
+}
+
+.edu-card-content {
+  padding: 1.875rem 1.25rem 0.625rem;
+}
+
+.edu-card-content h3 {
+  font-size: 24px;
+  color: #313237;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.edu-card-content p {
+  color: #838c8d;
+  margin: 0 0 20px 0;
+}
+.edu-card-content p:first-child {
+  margin: 0 0 10px 0;
+  color: #48959e;
+}
+.edu-right-border {
+  border-right: 2px solid #171c33;
+}
+/* Services */
+.services {
+  background-color: #b8d7f5;
+  padding: 80px 0px;
+}
+.service-box {
+  margin-top: 40px;
+}
+.service-s-box i {
+  color: #1d2959;
+  font-size: 32px;
+}
+.service-s-box h4 {
+  color: #171c33;
+  font-family: "Edu NSW";
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.service-s-box p {
+  color: #1d2959;
+  font-size: 18px;
+  padding-right: 5px;
+}
+.service-title h2::after {
+  background-color: #1d2959;
+}
+/*
+**
+Portfolio
+**
+*/
+.portfolio {
+  background-color: #f9f9f9;
+  padding: 80px 0px;
+}
+.portfolio-cards {
+  margin-top: 70px;
+}
+.single-card {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0px 3px 35px 3px;
+  height: 380px;
+  box-shadow: 0px 0px 1px gray;
+}
+
+.single-card a {
+  text-decoration: none;
+}
+.single-card:hover {
+  box-shadow: 0px 0px 20px #ddd1d1;
+  transition: 0.5s;
+}
+
+.card-thumb {
+  margin: 0;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0px 0px;
+}
+.card-thumb img {
+  width: 100%;
+  height: 220px;
+}
+
+.card-content {
+  padding: 1.875rem 1.25rem 0.625rem;
+}
+
+.card-content h3 {
+  font-size: 24px;
+  color: #313237;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.card-content p {
+  color: #838c8d;
+  margin: 0 0 20px 0;
+}
+.portfolio-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+.portfolio-btn a {
+  color: #171c33;
+  font-size: 22px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.portfolio-btn a:hover {
+  color: #58acfa;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px gray;
+}
+
+/* Contact form */
+.contact {
+  padding: 80px 0px;
+}
+.contact-form {
+  display: flex;
+  margin-top: 40px;
+  background-color: #b8d7f5;
+  border-radius: 0 10px 10px 0;
+}
+.contact-thumb {
+  width: 45%;
+  background: url("../img/email-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form {
+  width: 55%;
+  padding: 60px 40px;
+  font-family: "Edu NSW", Arial, Helvetica, sans-serif;
+}
+.form label {
+  font-weight: bold;
+}
+.form span {
+  color: red;
+  /* font-weight: 100; */
+}
+.form input[type="text"] {
+  display: block;
+  width: 90%;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid #0c1023;
+  border-radius: 0 5px 5px 0;
+  margin-bottom: 20px;
+}
+.form input[type="email"] {
+  display: block;
+  width: 90%;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 0 5px 5px 0;
+  margin-bottom: 20px;
+}
+.form textarea {
+  display: block;
+  width: 90%;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 0 5px 5px 0;
+  margin-bottom: 20px;
+  height: 140px !important;
+  resize: none;
+}
+
+.contact-btn input[type="submit"] {
+  background-color: #171c33;
+  padding: 10px 30px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+}
+.contact-btn input[type="submit"]:hover {
+  background-color: #243370;
+  color: #85c1fa;
+}
+.contact-btn p {
+  margin: 5px 0px;
+  color: #2aa22a;
+}
+
+/* Footer */
+footer {
+  overflow: hidden;
+  background-color: #0c1023;
+}
+footer ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 20px 0px;
+}
+footer ul li i {
+  color: rgb(191, 185, 185);
+  font-size: 20px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: rgb(191, 185, 185);
+  text-align: center;
+  font-size: 20px;
+}
+footer ul li a:hover,
+footer ul li i:hover,
+footer p a:hover {
+  color: #b8d7f5;
+}
+
+footer ul span {
+  color: rgb(191, 185, 185);
+  margin: 0px 15px;
+  font-weight: 700;
+}
+footer p {
+  color: rgb(160, 157, 157);
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+footer p a {
+  color: rgb(160, 157, 157);
+  text-decoration: none;
+}
+.clear {
+  clear: both;
+}
+
+/* resume iframe  */
+.resume {
+  margin-top: 30px;
+}
+.resume-iframe {
+  margin-top: 60px;
+  display: block;
+  border: none; /* Reset default border */
+  height: 100vh; /* Viewport-relative units */
+  width: calc(100% + 17px);
+}
+
+.resume-btn {
+  margin: 50px 0;
+  text-align: center;
+}
+.resume-btn a {
+  background-color: #171c33;
+  padding: 10px 30px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+.resume-btn a:hover {
+  background-color: #243370;
+  color: #85c1fa;
+}
