@@ -192,6 +192,18 @@
   .languages-title h2 {
     font-size: 20px;
   }
+  .language .lan-front,
+  .language .lan-back,
+  .language .p-lan,
+  .language .lan-vcs,
+  .language .lan-uiux,
+  .language .lan-deploy,
+  .language .lan-tools,
+  .language .lan-cms {
+    height: 200px;
+
+    margin-bottom: 20px;
+  }
   .language .lan-item {
     margin: 5px;
   }
@@ -298,10 +310,7 @@
   }
 
   /* languages */
-  .languages {
-    background: none;
-    background-color: #f29836;
-  }
+
   .single-bar p {
     color: black;
   }

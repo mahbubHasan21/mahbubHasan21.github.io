@@ -311,7 +311,7 @@ ul#nav li a:hover {
 /* Education */
 
 .education {
-  background-color: #f9f9f9;
+  background-color: #f0f2ff;
   padding: 80px 0px;
 }
 .edu-cards {
@@ -320,12 +320,14 @@ ul#nav li a:hover {
 .edu-single-card {
   border-radius: 5px;
   height: 245px;
+  background-color: #fff;
 }
 
 .edu-single-card a {
   text-decoration: none;
 }
 .edu-single-card:hover {
+  cursor: pointer;
   box-shadow: 0px 0px 20px #ddd1d1;
   transition: 0.5s;
 }
@@ -354,7 +356,7 @@ ul#nav li a:hover {
 }
 /* Services */
 .services {
-  background-color: #b8d7f5;
+  /* background-color: #b8d7f5; */
   padding: 80px 0px;
 }
 .service-box {
