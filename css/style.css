@@ -233,14 +233,64 @@ ul#nav li a:hover {
 
 /* Language */
 .languages {
-  background: url("../img/skills-bg.jpg"), #f29836;
   background-position: center;
   background-size: cover;
-  padding: 100px 0px;
-  margin-top: 100px;
+  padding: 70px 0px;
+}
+.language .lan-front,
+.language .lan-back,
+.language .p-lan,
+.language .lan-vcs,
+.language .lan-uiux,
+.language .lan-deploy,
+.language .lan-tools,
+.language .lan-cms {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 260px;
+  background-color: #f0f2ff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.language .lan-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.language .lan-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffffe5;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.language .lan-item:hover {
+  background-color: #bcc6ff;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.language .lan-item img {
+  width: 60%;
+}
+/**/
+.languages-title h2 {
+  font-size: 28px;
+  text-align: center;
 }
 .languages-title h2::after {
-  background-color: #1d2959;
+  background-color: #1a192e;
+  height: 3px;
+  width: 40px;
+  margin: auto;
 }
 .progress-bars {
   margin-top: 60px;
@@ -257,149 +307,9 @@ ul#nav li a:hover {
 .single-bar p span {
   float: right;
 }
-/* progress bar */
-
-.html,
-.css,
-.bootstrap,
-.js,
-.reactjs,
-.nodejs,
-.expressjs,
-.mongodb {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 10px;
-  background: transparent;
-  border: 1px solid black;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.html::after,
-.css::after,
-.bootstrap::after,
-.js::after,
-.nodejs::after,
-.expressjs::after,
-.reactjs::after,
-.mongodb::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 0;
-  height: 100%;
-  border-radius: 4px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-.html::after {
-  animation: html 5s forwards;
-}
-.css::after {
-  animation: css 5s forwards;
-}
-.bootstrap::after {
-  animation: bootstrap 5s forwards;
-}
-.js::after {
-  animation: js 5s forwards;
-}
-.nodejs::after {
-  animation: nodejs 5s forwards;
-}
-.expressjs::after {
-  animation: expressjs 5s forwards;
-}
-.reactjs::after {
-  animation: reactjs 5s forwards;
-}
-.mongodb::after {
-  animation: mongodb 5s forwards;
-}
-
-@keyframes html {
-  form {
-    width: 0;
-    background: #a28089;
-  }
-  to {
-    width: 90%;
-    background: #19234a;
-  }
-}
-@keyframes css {
-  form {
-    width: 0;
-    background: #a28089;
-  }
-  to {
-    width: 80%;
-    background: #19234a;
-  }
-}
-@keyframes bootstrap {
-  form {
-    width: 0;
-    background: #a28089;
-  }
-  to {
-    width: 70%;
-    background: #19234a;
-  }
-}
-@keyframes js {
-  form {
-    width: 0;
-    background: #a28089;
-  }
-  to {
-    width: 65%;
-    background: #19234a;
-  }
-}
-@keyframes reactjs {
-  form {
-    width: 0;
-    background: #a28089;
-  }
-  to {
-    width: 30%;
-    background: #19234a;
-  }
-}
-@keyframes nodejs {
-  form {
-    width: 0;
-    background: #a28089;
-  }
-  to {
-    width: 75%;
-    background: #19234a;
-  }
-}
-@keyframes expressjs {
-  form {
-    width: 0;
-    background: #a28089;
-  }
-  to {
-    width: 80%;
-    background: #19234a;
-  }
-}
-@keyframes mongodb {
-  form {
-    width: 0;
-    background: #a28089;
-  }
-  to {
-    width: 70%;
-    background: #19234a;
-  }
-}
 
 /* Education */
+
 .education {
   background-color: #f9f9f9;
   padding: 80px 0px;
@@ -429,6 +339,7 @@ ul#nav li a:hover {
   color: #313237;
   margin-bottom: 12px;
   font-weight: bold;
+  font-family: "Edu NSW", Arial, Helvetica, sans-serif;
 }
 .edu-card-content p {
   color: #838c8d;

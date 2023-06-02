@@ -63,6 +63,15 @@
   .a-contact {
     margin-top: 50px;
   }
+  /* Languages */
+
+  .languages-title h2 {
+    text-align: center;
+  }
+  .languages-title h2::after {
+    margin: auto;
+    border-radius: 30px;
+  }
   /* education */
   .edu-right-border {
     border-right: none;
@@ -178,6 +187,13 @@
     height: 170px;
     margin: auto;
     margin-top: 50px;
+  }
+
+  .languages-title h2 {
+    font-size: 20px;
+  }
+  .language .lan-item {
+    margin: 5px;
   }
   /* Portfolio */
   .portfolio-cards {
